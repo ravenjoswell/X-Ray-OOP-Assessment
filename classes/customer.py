@@ -14,7 +14,7 @@ class Customer:
                 new_customer = Customer(**row)
                 all_customers.append(new_customer)
         return all_customers
-    
+    # instead of appending, create as a all_customers dict 
     def __init__(self, id, account_type, first_name, last_name, current_video_rentals = []):
         self._id = id
         self._account_type = account_type
@@ -53,7 +53,7 @@ class Customer:
             "last_name":"Gellar",
             "account_type":"sx",
             }
-            
+            #pass a customer argument then have inputs assigned to customer, then put customer into a dict
         return new_customer
     def add_a_customer(cls):
         if isinstance(cls, Customer):
