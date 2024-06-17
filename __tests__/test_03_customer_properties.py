@@ -14,6 +14,7 @@ def test_03_customer_properties():
         "last_name": "Gellar",
         "current_video_rentals": ["The Godfather"],
     })
+    
     # Test existence and types of attributes
     assert hasattr(customer, "id")
     assert isinstance(customer.id, int)
